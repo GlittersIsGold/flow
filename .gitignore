@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+build/
+coverage/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# OS and IDE
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Testing
+.nyc_output/
+
+# Local databases and temporary files
+*.sqlite
+*.db
+.tmp/
+.temp/
+
+# TypeScript build info
+*.tsbuildinfo

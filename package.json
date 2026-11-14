@@ -1,0 +1,19 @@
+{
+  "name": "flow",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@12.18.0",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm --parallel --filter @flow/backend --filter @flow/frontend dev",
+    "dev:backend": "pnpm --filter @flow/backend start:dev",
+    "dev:frontend": "pnpm --filter @flow/frontend dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "infra:up": "podman-compose -f infrastructure/docker/docker-compose.yml up -d",
+    "infra:down": "podman-compose -f infrastructure/docker/docker-compose.yml down",
+    "infra:logs": "podman-compose -f infrastructure/docker/docker-compose.yml logs -f"
+  }
+}
